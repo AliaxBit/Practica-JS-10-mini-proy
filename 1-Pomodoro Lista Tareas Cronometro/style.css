@@ -12,11 +12,11 @@ body {
 
 .pomodoro {
     width: 500px;
-    height: inherit;
     padding: 30px;
     margin: 5px;
     border: solid 1px #000;
     background-color: #ffffff;
+    transform: 0.8s;
 }
 
 .cronometro {
@@ -51,7 +51,8 @@ body {
 }
 
 .form .boton-agregar-tarea,
-#intro-tarea {
+.intro{
+    text-align: center;
     height: 30px;
     min-width: 60%;
     border: none;
@@ -73,6 +74,8 @@ body {
     width: 100%;
     margin-top: 30px;
     flex-direction: column;
+    min-height: 70px;
+    
 }
 
 .tarea {
@@ -85,15 +88,22 @@ body {
     border-radius: 5px;
     background-color: #fff;
 }
+.tarea .div-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 20%;
+}
 
 .tarea input {
     height: 30px;
-    width: 20%;
+    width: 100%;
     border: solid 1px #a960e6;
     border-radius: 5px;
     background-color: #9448d3;
     color: #fff;
-    font-size: 0.6rem;
+    font-size: 0.85rem;
 }
 
 .tarea p {
@@ -101,5 +111,19 @@ body {
     margin: 5px;
     width: 80%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+}
+
+.exito{
+    text-align: center;
+    line-height: 28px;
+    height: 28px;
+    width: 100%;
+    border: solid 1px #43d6aa;
+    border-radius: 5px;
+    background-color: #298368;
+    color: #fff;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+
 }
