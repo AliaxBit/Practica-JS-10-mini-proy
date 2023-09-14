@@ -5,5 +5,6 @@
 
 
 2- Mascara para Input /Config
-![Alt text](<Mascara - Opera.jpg>)
+
+![Mascara - Opera](https://github.com/Estupi/Practica-JS-10-mini-proy/assets/97317491/5d87a748-9ad2-4067-a7d7-90d23ffa3ef5)
 
