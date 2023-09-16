@@ -1,15 +1,35 @@
 let eventos = [];
+let datosGuardados = [];
 
 const evento_nombre = document.querySelector('#evento_nombre');
 const evento_fecha = document.querySelector('#evento_fecha');
 const boton_add = document.querySelector('#boton_anadir');
 const contenedor_eventos = document.querySelector('.contenedor_eventos');
 
+const json = cargarDatos();
+try {
+    datosGuardados = JSON.parse(json);
+} catch (error) {
+    datosGuardados = [];
+    console.log(error);
+}
+
+eventos = datosGuardados ? [... datosGuardados] : [];
+renderizarEvento();
+
 document.querySelector('.contenedor').addEventListener('submit', e => {
 
     e.preventDefault();
     anadirEvento();
 });
+
+
+boton_add.addEventListener('click', (e) =>{
+
+    e.preventDefault();
+    anadirEvento();
+});
+
 
 function anadirEvento() {
 
@@ -33,6 +53,7 @@ function anadirEvento() {
     }
 
     eventos.unshift(nuevo_evento);
+    guardarDatos(JSON.stringify(eventos));
     evento_nombre.value = '';
     renderizarEvento();
 }
@@ -78,4 +99,12 @@ function renderizarEvento(id) {
             renderizarEvento();
         });
     });
+}
+
+function guardarDatos(datos){
+    localStorage.setItem('items', datos);
+}
+
+function cargarDatos(){
+    return localStorage.getItem('items');
 }
