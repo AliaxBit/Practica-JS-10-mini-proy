@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0bfbf;
+}
+
+.aplicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor {
+    background-color: #ffffff30;
+    padding: 20px;
+    width: 500px;
+    max-height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.contenedor input {
+    margin: 5px 0;
+    padding: 5px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 0.5px #d1cece;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 25px;
+    width: 500px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.formulario #boton_anadir {
+    border: none;
+    background-color: #6eadd1;
+    padding: 5px;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contenedor_eventos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.contenedor_eventos.ocultar{
+    display: none;
+}
+
+.evento {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.dias {
+    width: 20%;
+    text-align: center;
+    font-family: sans-serif;
+
+    box-sizing: border-box;
+}
+
+.dias .dias_restantes {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+}
+
+.dias .texto_dias {
+    font-size: 15px;
+}
+
+.evento .evento_texto {
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento_texto .nombre {
+    text-align: start;
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.evento_texto .fecha {
+    text-align: center;
+    width: 30%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.evento_texto .btn_eliminar_evento {
+    border: none;
+    background-color: #d12525;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    display: list-item;
+    width: 20%;
+}

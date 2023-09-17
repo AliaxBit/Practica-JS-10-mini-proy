@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>App-Calcular-Fecha</title>
+    <title>App-Contar-Días</title>
 </head>
 <body>
 
     <div class="aplicacion">
         <div class="contenedor">
-            <form action="">
-                <input type="text" id="evento_nombre">
+            <form action="" class="formulario">
+                <input type="text" id="evento_nombre" onblur="primeraMayuscula(this)">
                 <input type="date" id="evento_fecha">
-                <input type="submit" id="bton_anadir" value="Añadir Evento">
+                <input type="submit" id="boton_anadir" value="Añadir Evento">
             </form>
-
             <div class="contenedor_eventos"></div>
-      
         </div>
     </div>
 

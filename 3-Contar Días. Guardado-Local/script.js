@@ -5,8 +5,8 @@ const evento_nombre = document.querySelector('#evento_nombre');
 const evento_fecha = document.querySelector('#evento_fecha');
 const boton_add = document.querySelector('#boton_anadir');
 const contenedor_eventos = document.querySelector('.contenedor_eventos');
-
 const json = cargarDatos();
+
 try {
     datosGuardados = JSON.parse(json);
 } catch (error) {
@@ -14,30 +14,30 @@ try {
     console.log(error);
 }
 
-eventos = datosGuardados ? [... datosGuardados] : [];
+function primeraMayuscula(input) {
+    evento_nombre.value = evento_nombre.value.charAt(0).toUpperCase() + input.value.slice(1);
+}
+primeraMayuscula(evento_nombre);
+
+eventos = datosGuardados ? [...datosGuardados] : [];
 renderizarEvento();
 
-document.querySelector('.contenedor').addEventListener('submit', e => {
+document.querySelector('.formulario').addEventListener('submit', e => {
 
     e.preventDefault();
     anadirEvento();
 });
 
-
-boton_add.addEventListener('click', (e) =>{
+boton_add.addEventListener('click', (e) => {
 
     e.preventDefault();
     anadirEvento();
-});
 
+});
 
 function anadirEvento() {
 
-    if (evento_nombre.value == '' && evento_fecha.value == '') {
-        return;
-    }
-
-    if (evento_fecha.value == "") {
+    if (evento_nombre.value == "" || evento_fecha.value == "") {
         return;
     }
 
@@ -55,6 +55,8 @@ function anadirEvento() {
     eventos.unshift(nuevo_evento);
     guardarDatos(JSON.stringify(eventos));
     evento_nombre.value = '';
+    evento_fecha.value = null;
+
     renderizarEvento();
 }
 
@@ -74,16 +76,14 @@ function renderizarEvento(id) {
         return `<div class="evento" >
                     <div class="dias">
                         <span class="dias_restantes">${diferencia_Fechas(evento.fecha)}</span>
-                        <span class="texto_dias">días</span>
+                        <span class="texto_dias">Días</span>
                     </div>
-
-                    <div class="evento_nombre">${evento.nombre_evento}</div>
-                        <div class="evento_nombre">${evento.fecha}</div>
-                        <div class="accion" >
+                    <div class="evento_texto">
+                        <span class="nombre">${evento.nombre_evento}</span>
+                        <div class="fecha">${evento.fecha}</div>
                         <button class="btn_eliminar_evento" data-id="${evento.id}">Eliminar</button>
-                        </div>
                     </div>
-               `;
+                </div>`;
     });
 
     contenedor_eventos.innerHTML = codigo_html_evento.join('');
@@ -95,16 +95,22 @@ function renderizarEvento(id) {
 
             const id = btn.getAttribute('data-id');
             eventos = eventos.filter((evento) => evento.id != id);
-
+            guardarDatos(JSON.stringify(eventos));
             renderizarEvento();
         });
     });
+   
+    if (eventos.length === 0) {
+        contenedor_eventos.classList.add('ocultar');
+    }else{
+        contenedor_eventos.classList.remove('ocultar');
+    }
 }
 
-function guardarDatos(datos){
+function guardarDatos(datos) {
     localStorage.setItem('items', datos);
 }
 
-function cargarDatos(){
+function cargarDatos() {
     return localStorage.getItem('items');
 }
