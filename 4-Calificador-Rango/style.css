@@ -1,0 +1,23 @@
+body {
+    background-color: #35a53e;
+}
+
+.rango {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.objeto {
+    background-color: #e2e2e2;
+    background-repeat: no-repeat;
+    -webkit-mask-image: url(./img/star-point_icon-icons.com_68483.svg);
+    mask-image: url(./img/star-point_icon-icons.com_68483.svg);
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.objeto_lleno {
+    background-color: #f4f801;
+}
