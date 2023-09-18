@@ -11,3 +11,7 @@
 3- App-Contar-Días /localStorage
 
 ![App-Contar-Días - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/b179ada1-ca32-4733-b950-c0f1d88d9168)
+
+4- Calificador-Rango /Mascara-SVG
+
+![Calificador - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/3cf20985-359c-4431-919a-4273113655c7)
