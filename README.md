@@ -15,3 +15,8 @@
 4- Calificador-Rango /Mascara-SVG
 
 ![Calificador - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/3cf20985-359c-4431-919a-4273113655c7)
+
+8- Convertido De JSON a CSV  /Herramienta
+
+![PrtScr capture](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/054303d0-65b9-4677-b2d4-92abb6cdc2f9)
+
