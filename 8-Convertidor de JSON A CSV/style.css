@@ -1,0 +1,51 @@
+.from {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.json,
+.csv {
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#btn_convertir {
+    padding: 10px;
+    width: 25%;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+#btn_convertir:hover {
+    color: #fff;
+    background-color: #363535;
+    transition: 0.4s;
+}
+
+h3 {
+    font-size: 30px;
+    border: solid 1px #000;
+    width: 15%;
+    text-align: center;
+    padding: 5px;
+}
+
+h3:hover {
+    color: #fff;
+    background-color: #363535;
+    transition: 0.4s;
+    border-radius: 5px;
+}
