@@ -1,5 +1,5 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #59a1a3;
 }
 
@@ -11,7 +11,6 @@ body {
     display: flex;
     align-items: center;
     outline: none;
-
 }
 
 .input_tags_container {
@@ -38,8 +37,7 @@ body {
     border-radius: 5px;
     align-items: center;
     font-size: 18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .tag_item button {
@@ -54,7 +52,6 @@ body {
     font-size: 17px;
     text-align: center;
     cursor: pointer;
-    
 }
 
 .tag_item button:hover {
