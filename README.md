@@ -24,3 +24,10 @@
 
 ![Componente de Etiquetas - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/86e03761-979a-4ffa-8658-411b7de6cf4b)
 
+9- Sistema de Comentarios-Likes /Recursividad
+
+![SIstema de Comentarios - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/031930bb-e6e4-4273-98b0-e8b9699221f5)
+
+
+
+
