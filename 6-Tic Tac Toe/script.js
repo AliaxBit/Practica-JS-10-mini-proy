@@ -10,6 +10,7 @@ let turn = 0;
 const boardContainer = document.querySelector('#board');
 const playerDiv = document.querySelector('#player');
 
+
 startGame();
 
 function startGame() {
@@ -26,8 +27,8 @@ function startGame() {
 }
 
 function playerPlays() {
-    const cells = document.querySelectorAll('.cell');
 
+    const cells = document.querySelectorAll('.cell');
     cells.forEach((cell, i) => {
 
         const column = i % 3;
@@ -38,15 +39,15 @@ function playerPlays() {
                 board[row][column] = '0';
                 cell.textContent = board[row][column];
                 turn = 1;
-                const won = checkIfWinner();
 
+                const won = checkIfWinner();
                 if (won == 'none') {
                     pcPlays();
                     return;
                 }
                 if (won == "draw") {
                     renderDraw();
-                    cell.removeEventListener('click', this);
+                    cell.removeEventListener('click', this)
                     return;
                 }
             });
@@ -55,7 +56,11 @@ function playerPlays() {
 }
 
 function pcPlays() {
-
+    /*
+        cells.forEach((cell) => { 
+                cell.removeEventListener('click', this);
+        });
+        */
     renderCurrentPlayer();
     setTimeout(() => {
         let played = false;
@@ -209,6 +214,6 @@ function renderBoard() {
 }
 
 function renderCurrentPlayer() {
-    return playerDiv.textContent = `${turn == 0 ? 'Player Turn' : 'PC Turn'}`;
+    return playerDiv.textContent = `${turn == 0 ? 'Player Turn' : 'PC Turn ...'}`;
 }
 
