@@ -10,7 +10,6 @@ let turn = 0;
 const boardContainer = document.querySelector('#board');
 const playerDiv = document.querySelector('#player');
 
-
 startGame();
 
 function startGame() {
@@ -56,11 +55,7 @@ function playerPlays() {
 }
 
 function pcPlays() {
-    /*
-        cells.forEach((cell) => { 
-                cell.removeEventListener('click', this);
-        });
-        */
+    
     renderCurrentPlayer();
     setTimeout(() => {
         let played = false;
