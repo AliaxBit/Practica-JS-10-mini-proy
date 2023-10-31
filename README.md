@@ -20,6 +20,7 @@
 ![teclado](https://github.com/AliaxDev/Practica-JS-10-mini-proy/assets/97317491/08c14cd2-6b2f-4b1e-ae3f-85319b1517b0)
 
 6- Tic-Tac-Toe  /Juego
+
 ![tic tac toe](https://github.com/AliaxDev/Practica-JS-10-mini-proy/assets/97317491/e4f1bb9c-14bc-4de0-a272-d3107faab7b7)
 
 7- Convertido De JSON a CSV  /Herramienta
