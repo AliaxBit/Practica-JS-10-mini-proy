@@ -15,6 +15,13 @@
 
 ![Calificador - Opera](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/3cf20985-359c-4431-919a-4273113655c7)
 
+5- Teclado Virtual /Array Bidimencional
+
+![teclado](https://github.com/AliaxDev/Practica-JS-10-mini-proy/assets/97317491/08c14cd2-6b2f-4b1e-ae3f-85319b1517b0)
+
+6- Tic-Tac-Toe  /Juego
+![tic tac toe](https://github.com/AliaxDev/Practica-JS-10-mini-proy/assets/97317491/e4f1bb9c-14bc-4de0-a272-d3107faab7b7)
+
 7- Convertido De JSON a CSV  /Herramienta
 
 ![PrtScr capture](https://github.com/AliaxBit/Practica-JS-10-mini-proy/assets/97317491/054303d0-65b9-4677-b2d4-92abb6cdc2f9)
